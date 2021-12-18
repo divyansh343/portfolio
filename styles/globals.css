@@ -1,0 +1,155 @@
+@import url("https://use.typekit.net/zpy2zmz.css");
+
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-dark text-white;
+  }
+}
+
+/* Typography Styles */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold mb-2 tracking-tight;
+  }
+  h1 {
+    @apply font-display text-4xl md:text-5xl;
+  }
+  h2 {
+    @apply font-display text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply font-display text-2xl md:text-3xl;
+  }
+  h4 {
+    @apply font-display text-xl md:text-2xl;
+  }
+  h5 {
+    @apply font-display text-lg md:text-xl;
+  }
+  h6 {
+    @apply font-display text-sm md:text-base;
+  }
+  .small-text {
+    @apply text-sm font-semibold uppercase text-light;
+  }
+  p {
+    @apply font-body text-base mb-4 leading-relaxed
+    text-light;
+  }
+  a {
+    @apply font-semibold text-brand opacity-100 transition-all duration-200 hover:text-white;
+  }
+}
+
+@layer base {
+  .underline-link {
+    @apply hover:border-brand border-b-2 border-transparent;
+  }
+}
+
+/* Large Button */
+@layer components {
+  .btn-lg {
+    @apply inline-flex h-14 items-center px-8 justify-center
+    text-center
+    font-semibold rounded-sm
+    shadow-none
+   self-start transition-all duration-150 ease-in-out transform translate-y-0 group hover:-translate-y-1;
+  }
+}
+
+/* Medium Button */
+@layer components {
+  .btn-md {
+    @apply inline-flex h-12 py-1 items-center justify-center px-6 flex-grow-0
+    text-center
+    font-semibold rounded-sm
+    shadow-none
+    text-base
+    transition-all duration-300 ease-in-out transform translate-y-0 group hover:-translate-y-1;
+  }
+}
+
+/* Small Button */
+@layer components {
+  .btn-sm {
+    @apply inline-flex h-12 items-center justify-center
+    px-5 flex-grow-0
+    text-center
+    font-semibold rounded-sm
+    shadow-none
+    text-sm
+    transition-all duration-150 ease-in-out transform translate-y-0 group hover:-translate-y-1;
+  }
+}
+@layer components {
+  .btn-sm-no-text {
+    @apply inline-flex h-12 items-center justify-center
+   flex-grow-0
+    text-center
+    font-semibold rounded-sm
+    shadow-none
+    text-sm
+    transition-all duration-150 ease-in-out transform translate-y-0 group hover:-translate-y-1;
+  }
+}
+/* Standard Buttons */
+@layer components {
+  .btn-brand {
+    @apply border-2
+    bg-brand
+    border-brand
+    hover:bg-brandAlt
+    hover:border-brandAlt
+    text-white
+    focus:outline-none
+    focus:ring-0
+    transition-all duration-150 ease-in-out;
+  }
+}
+
+/* Outline buttons */
+@layer components {
+  .btn-outline {
+    @apply border-2
+    bg-transparent
+    border-white
+    hover:border-brand
+    hover:bg-brand
+    text-white
+    focus:outline-none
+    focus:ring-0
+    transition-all duration-150 ease-in-out;
+  }
+}
+
+@layer base {
+  .selected {
+    @apply border-brand text-white border-b-2 opacity-100 hover:border-white;
+  }
+}
+
+@layer components {
+  input,
+  textarea {
+    @apply w-full bg-darker rounded-sm appearance-none border-0 p-4 text-white focus:outline-none
+    focus:ring-2 focus:ring-brand;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

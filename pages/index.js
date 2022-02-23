@@ -28,22 +28,22 @@ import FeaturedProjectCard from "../components/FeaturedProjectCard";
 
 const projects = [
   {
-    title: "Fulltodev",
+    title: "NFT",
     overview:
-      "Developer articles news Reports from all around the world. news is fetches from diffrent sources using APIs.",
-    stack: ["express js", "Next", "Rest api", "tailwind"],
-    link: null,
-    repo: null,
-    isSiteLive: false,
+      "this NFT theme is used to shocase your nft collection to the wide noumber of people on the internet.",
+    stack: ["React", "Rest api", "tailwind"],
+    link: "https://nft-collection-theme.vercel.app/",
+    repo: "https://github.com/divyansh343/nft-collection-theme",
+    isSiteLive: true,
   },
   {
-    title: "MovieMarks",
+    title: "Hangout pallete",
     overview:
-      "A single-page application that helps filmmakers learn more about who their film might be suitable for.",
-    stack: ["express", "React", "node"],
-    link: null,
-    repo: null,
-    isSiteLive: false,
+      "A single-page application that helps developers or designer to find right colour for thier website.",
+    stack: ["React", "css"],
+    link: "https://hangouts-pallete.vercel.app/",
+    repo: "https://github.com/divyansh343/hangouts-pallete",
+    isSiteLive: true,
   },
   {
     title: "Wallet tracker",
@@ -55,12 +55,21 @@ const projects = [
     isSiteLive: true,
   },
   {
-    title: "Kindspot",
+    title: "portfolio",
     overview:
-      "A simple blog application built in top of django framework which uses python.",
-    stack: ["Django", "Python"],
-    link: "",
-    repo: "https://github.com/divyansh343/",
+      "this is my portfolio you currently surfing on",
+    stack: ["next js", "tailwind"],
+    link: "https://divyanshpal.vercel.app/",
+    repo: "https://github.com/divyansh343/portfolio",
+    isSiteLive: true,
+  },
+  {
+    title: "All projects",
+    overview:
+      "look into my github repositorys to dig more into my profile",
+    stack: ["github"],
+    link: "https://github.com/divyansh343/",
+    repo: false,
     isSiteLive: true,
   },
 ];
@@ -160,7 +169,7 @@ export default function Home() {
         }`}
     >
       <Head>
-        <title>Divyansh Pal | React Developer & </title>
+        <title>Divyansh Pal | Frontend Developer  </title>
         <meta
           name="description"
           content="The portfolio of frontend developer and designer, Divyansh Pal"
@@ -184,8 +193,8 @@ export default function Home() {
       {/* Full-screen Menu */}
       <div
         className={`fixed w-full z-50 h-screen pt-24 bg-darker bg-opacity-100 transform delay-100 transition-all duration-300 ${navbarOpen
-            ? "opacity-100 translate-x-0"
-            : "opacity-0 -translate-x-full"
+          ? "opacity-100 translate-x-0"
+          : "opacity-0 -translate-x-full"
           }`}
       >
         <div className="container relative mx-auto">
@@ -195,8 +204,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out ${visibleSection === "home"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     setNavbarOpen(false);
@@ -210,8 +219,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out ${visibleSection === "about"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     setNavbarOpen(false);
@@ -225,8 +234,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out ${visibleSection === "skills"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     setNavbarOpen(false);
@@ -240,8 +249,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out ${visibleSection === "my-work"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     setNavbarOpen(false);
@@ -253,12 +262,12 @@ export default function Home() {
               </li>
               <li className="z-50 block py-2 list-none lg:inline-block">
                 <a
-                  href="resume.pdf"
+                  href="myResume.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out text-white ${visibleSection === "blog"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                 >
                   CV
@@ -268,8 +277,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out ${visibleSection === "contact"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     setNavbarOpen(false);
@@ -363,8 +372,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out ${visibleSection === "home"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     scrollTo(homeRef.current);
@@ -377,8 +386,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out ${visibleSection === "about"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     scrollTo(aboutRef.current);
@@ -391,8 +400,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out ${visibleSection === "skills"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     scrollTo(skillsRef.current);
@@ -405,8 +414,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out ${visibleSection === "my-work"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     scrollTo(myWorkRef.current);
@@ -417,12 +426,12 @@ export default function Home() {
               </li>
               <li className="z-50 hidden mx-5 list-none lg:inline-block">
                 <a
-                  href="resume.pdf"
+                  href="myResume.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out text-white ${visibleSection === "blog"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                 >
                   CV
@@ -432,8 +441,8 @@ export default function Home() {
                 <button
                   href="#"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out ${visibleSection === "contact"
-                      ? "selected delay-300"
-                      : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
+                    ? "selected delay-300"
+                    : "opacity-50 hover:opacity-100 border-b-2 border-transparent"
                     }`}
                   onClick={() => {
                     scrollTo(contactRef.current);
@@ -498,14 +507,14 @@ export default function Home() {
                   eraseSpeed={30}
                   eraseDelay={1500}
                   text={[
-                    `React Developer`,
-                    `Next js Developer`,
+                    `Frontend developer`,
+                    `React js`,
                     `Mern stack`,
                   ]}
                 />
               </h2>
               <p className="w-4/5 text-xl md:w-full">
-                I build appealing websites that look good, and work well.
+                Making imagination come alive on the internet.
               </p>
               <p className="w-4/5 text-xl md:w-full">love going through the entire process</p>
               <button
@@ -533,8 +542,8 @@ export default function Home() {
             <div className="flex flex-col-reverse items-start w-full md:flex-row">
               <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                 <p className="text-lg">
-                  Hello! I&apos;m Divyansh and I&apos;m a React developer,
-                  designer, from India.
+                  Hello! I&apos;m Divyansh and I&apos;m a Frontend developer
+                  from India.
                 </p>
                 <p className="text-lg">
                   After getting intrested in tech related stuff, I knew I wanted
@@ -547,18 +556,7 @@ export default function Home() {
 
                 </p>
                 <p className="text-lg">
-                  Alongside my design and development work, I love to create content
-                  on twitter related to technologies. that i prefer to release dopamine.
-
-                  <a
-                    href="https://twitter.com/divyansPal"
-                    target="_blank"
-                    className="underline-link"
-                    rel="noreferrer"
-                  >
-                    twitter
-                  </a>
-                  , so I like to keep busy!
+                  Alongside my design and development work, I love to work on project that are useful sometime to release dopamine.
                 </p>
                 <p className="text-lg">
                   Take a look at my work below to see what I&apos;m working on,
@@ -861,15 +859,14 @@ export default function Home() {
           <div className="flex flex-col w-full mb-12">
             {/* Project one */}
             <FeaturedProjectCard
-              title={"Portfolio site"}
-              status={"Currently surfing on"}
-              description={`dynamic Portfolio website designed using Next js. 
-               it utilises react components and Tailwind code.`}
+              title={"Outlivin"}
+              status={"Upcoming Project"}
+              description={`this palteform helps the students or worker to immigrate into other developing countries for more opportunities. we provide ease to make decision by giving information about countries and their ecosystem.`}
               float={`right-0`}
               flexDirection={`flex-col lg:flex-row-reverse`}
               imgWidth={"1366"}
               imgHeight={"666"}
-              imgSrc={"/projects/colorhub.png"}
+              imgSrc={"/projects/outliv.png"}
               liveLink={""}
               repoLink={null}
               stack={
@@ -1058,8 +1055,8 @@ export default function Home() {
               <svg
                 id="e5c888e5-3206-4553-8f53-60ee93248ad9"
                 className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "home"
-                    ? "rotate-45 scale-110"
-                    : "rotate-0 scale-100"
+                  ? "rotate-45 scale-110"
+                  : "rotate-0 scale-100"
                   }`}
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1069,16 +1066,16 @@ export default function Home() {
                 {/* Fill */}
                 <path
                   className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark group-hover:rotate-90 ${visibleSection === "home"
-                      ? "text-white rotate-90"
-                      : "text-dark rotate-0"
+                    ? "text-white rotate-90"
+                    : "text-dark rotate-0"
                     }`}
                   d="M5.64 5.64h12.73v12.73H5.64z"
                 />
                 {/* Border */}
                 <path
                   className={`fill-current origin-center transform transition duration-500 ease-in-out group-hover:text-white group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "home"
-                      ? "text-white rotate-45 opacity-100"
-                      : "text-white rotate-45 opacity-40"
+                    ? "text-white rotate-45 opacity-100"
+                    : "text-white rotate-45 opacity-40"
                     }`}
                   d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                 />
@@ -1094,8 +1091,8 @@ export default function Home() {
               <svg
                 id="e5c888e5-3206-4553-8f53-60ee93248ad9"
                 className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "about"
-                    ? "rotate-45 scale-110"
-                    : "rotate-0 scale-100"
+                  ? "rotate-45 scale-110"
+                  : "rotate-0 scale-100"
                   }`}
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1105,16 +1102,16 @@ export default function Home() {
                 {/* Fill */}
                 <path
                   className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark group-hover:rotate-90 ${visibleSection === "about"
-                      ? "text-white rotate-90"
-                      : "text-dark rotate-0"
+                    ? "text-white rotate-90"
+                    : "text-dark rotate-0"
                     }`}
                   d="M5.64 5.64h12.73v12.73H5.64z"
                 />
                 {/* Border */}
                 <path
                   className={`fill-current origin-center transform transition duration-500 ease-in-out group-hover:text-white group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "about"
-                      ? "text-white rotate-45 opacity-100"
-                      : "text-white rotate-45 opacity-40"
+                    ? "text-white rotate-45 opacity-100"
+                    : "text-white rotate-45 opacity-40"
                     }`}
                   d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                 />
@@ -1130,8 +1127,8 @@ export default function Home() {
               <svg
                 id="e5c888e5-3206-4553-8f53-60ee93248ad9"
                 className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "skills"
-                    ? "rotate-45 scale-110"
-                    : "rotate-0 scale-100"
+                  ? "rotate-45 scale-110"
+                  : "rotate-0 scale-100"
                   }`}
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1141,16 +1138,16 @@ export default function Home() {
                 {/* Fill */}
                 <path
                   className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark group-hover:rotate-90 ${visibleSection === "skills"
-                      ? "text-white rotate-90"
-                      : "text-dark rotate-0"
+                    ? "text-white rotate-90"
+                    : "text-dark rotate-0"
                     }`}
                   d="M5.64 5.64h12.73v12.73H5.64z"
                 />
                 {/* Border */}
                 <path
                   className={`fill-current origin-center transform transition duration-500 ease-in-out group-hover:text-white group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "skills"
-                      ? "text-white rotate-45 opacity-100"
-                      : "text-white rotate-45 opacity-40"
+                    ? "text-white rotate-45 opacity-100"
+                    : "text-white rotate-45 opacity-40"
                     }`}
                   d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                 />
@@ -1166,8 +1163,8 @@ export default function Home() {
               <svg
                 id="e5c888e5-3206-4553-8f53-60ee93248ad9"
                 className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "my-work"
-                    ? "rotate-45 scale-110"
-                    : "rotate-0 scale-100"
+                  ? "rotate-45 scale-110"
+                  : "rotate-0 scale-100"
                   }`}
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1177,16 +1174,16 @@ export default function Home() {
                 {/* Fill */}
                 <path
                   className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark group-hover:rotate-90 ${visibleSection === "my-work"
-                      ? "text-white rotate-90"
-                      : "text-dark rotate-0"
+                    ? "text-white rotate-90"
+                    : "text-dark rotate-0"
                     }`}
                   d="M5.64 5.64h12.73v12.73H5.64z"
                 />
                 {/* Border */}
                 <path
                   className={`fill-current origin-center transform transition duration-500 ease-in-out group-hover:text-white group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "my-work"
-                      ? "text-white rotate-45 opacity-100"
-                      : "text-white rotate-45 opacity-40"
+                    ? "text-white rotate-45 opacity-100"
+                    : "text-white rotate-45 opacity-40"
                     }`}
                   d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                 />
@@ -1202,8 +1199,8 @@ export default function Home() {
               <svg
                 id="e5c888e5-3206-4553-8f53-60ee93248ad9"
                 className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "contact"
-                    ? "rotate-45 scale-110"
-                    : "rotate-0 scale-100"
+                  ? "rotate-45 scale-110"
+                  : "rotate-0 scale-100"
                   }`}
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1213,16 +1210,16 @@ export default function Home() {
                 {/* Fill */}
                 <path
                   className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark group-hover:rotate-90 ${visibleSection === "contact"
-                      ? "text-white rotate-90"
-                      : "text-dark rotate-0"
+                    ? "text-white rotate-90"
+                    : "text-dark rotate-0"
                     }`}
                   d="M5.64 5.64h12.73v12.73H5.64z"
                 />
                 {/* Border */}
                 <path
                   className={`fill-current origin-center transform transition duration-500 ease-in-out group-hover:text-white group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "contact"
-                      ? "text-white rotate-45 opacity-100"
-                      : "text-white rotate-45 opacity-40"
+                    ? "text-white rotate-45 opacity-100"
+                    : "text-white rotate-45 opacity-40"
                     }`}
                   d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                 />

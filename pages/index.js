@@ -566,13 +566,13 @@ export default function Home() {
                 </button> */}
               </div>
               <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
-                <Image
+                {/* <Image
                   src="/divyansh-main.jpg"
                   className="overflow-hidden rounded-md"
                   width={880}
                   height={880}
                   alt={"Divyansh pal headshot"}
-                />
+                /> */}
               </div>
             </div>
           </div>

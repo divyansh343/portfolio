@@ -28,6 +28,28 @@ import FeaturedProjectCard from "../components/FeaturedProjectCard";
 
 const projects = [
   {
+    title: "Outlivin",
+    overview:
+      `Outlivin lists Opportunities of the growing and developing
+      countries. one can figure out by analyzing the data and choose
+      the appropirate.`,
+    stack: ["React", "Rest api", "tailwind"],
+    link: "https://outlivin.vercel.app/",
+    repo: false,
+    isSiteLive: true,
+  },
+  {
+    title: "Crypto news Api",
+    overview:
+      `it fetches realtime information about the cryptcurrency and
+      exposes it into endpoints. currently listed on rapid api
+      marketplace.`,
+    stack: ["React", "Rest api", "tailwind"],
+    link: "https://crypto-news-apis.herokuapp.com/",
+    repo: "https://github.com/divyansh343/crypto-api",
+    isSiteLive: true,
+  },
+  {
     title: "NFT",
     overview:
       "this NFT theme is used to shocase your nft collection to the wide noumber of people on the internet.",
@@ -262,7 +284,7 @@ export default function Home() {
               </li>
               <li className="z-50 block py-2 list-none lg:inline-block">
                 <a
-                  href="myResume.pdf"
+                  href="eresume.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out text-white ${visibleSection === "blog"
@@ -426,7 +448,7 @@ export default function Home() {
               </li>
               <li className="z-50 hidden mx-5 list-none lg:inline-block">
                 <a
-                  href="myResume.pdf"
+                  href="eresume.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out text-white ${visibleSection === "blog"
@@ -508,7 +530,7 @@ export default function Home() {
                   eraseDelay={1500}
                   text={[
                     `Frontend developer`,
-                    `React js`,
+                    `Software engineer`,
                     `Mern stack`,
                   ]}
                 />
@@ -859,15 +881,17 @@ export default function Home() {
           <div className="flex flex-col w-full mb-12">
             {/* Project one */}
             <FeaturedProjectCard
-              title={"Outlivin"}
-              status={"Upcoming Project"}
-              description={`this palteform helps the students or worker to immigrate into other developing countries for more opportunities. we provide ease to make decision by giving information about countries and their ecosystem.`}
+              title={"Mockyard"}
+              status={"Latest Project"}
+              description={`Mockayard exposes endpoint to test your application with the
+              realistic data. it helps you to kick out development with dummy
+              data`}
               float={`right-0`}
               flexDirection={`flex-col lg:flex-row-reverse`}
               imgWidth={"1366"}
               imgHeight={"666"}
-              imgSrc={"/projects/outliv.png"}
-              liveLink={""}
+              imgSrc={"/projects/mockyard.png"}
+              liveLink={"https://mockyard.in"}
               repoLink={null}
               stack={
                 <>
@@ -919,7 +943,7 @@ export default function Home() {
                     fixedHeight={"h-auto"}
                   />
 
-                  <Icon
+                  {/* <Icon
                     IconType={NextJs}
                     title="Next"
                     columnSizing={"w-auto"}
@@ -933,7 +957,7 @@ export default function Home() {
                     marginRight={"mr-3"}
                     textTransform={"uppercase"}
                     fixedHeight={"h-auto"}
-                  />
+                  /> */}
                 </>
               }
             />

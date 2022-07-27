@@ -28,6 +28,17 @@ import FeaturedProjectCard from "../components/FeaturedProjectCard";
 
 const projects = [
   {
+    title: "Mockyard",
+    overview:
+      `Mockayard exposes endpoint to test your application with the
+      realistic data. it helps you to kick out development with dummy
+      data.`,
+    stack: ["React", "Rest api", "tailwind"],
+    link: "https://www.mockyard.in/",
+    repo: false,
+    isSiteLive: true,
+  },
+  {
     title: "Outlivin",
     overview:
       `Outlivin lists Opportunities of the growing and developing
@@ -569,7 +580,7 @@ export default function Home() {
                 </p>
                 <p className="text-lg">
                   After getting intrested in tech related stuff, I knew I wanted
-                  to work with computers and technology, then I started learning web development online.
+                  to work with computers and technology.
                 </p>
 
                 <p className="text-lg">
@@ -881,17 +892,15 @@ export default function Home() {
           <div className="flex flex-col w-full mb-12">
             {/* Project one */}
             <FeaturedProjectCard
-              title={"Mockyard"}
+              title={"theSocialCharts"}
               status={"Latest Project"}
-              description={`Mockayard exposes endpoint to test your application with the
-              realistic data. it helps you to kick out development with dummy
-              data`}
+              description={`theSocialCharts is built in MERN stack with interactive admin dashboard`}
               float={`right-0`}
               flexDirection={`flex-col lg:flex-row-reverse`}
               imgWidth={"1366"}
               imgHeight={"666"}
-              imgSrc={"/projects/mockyard.png"}
-              liveLink={"https://mockyard.in"}
+              imgSrc={"/projects/thesocial.png"}
+              liveLink={"https://theSocialCharts.com"}
               repoLink={null}
               stack={
                 <>
@@ -943,7 +952,7 @@ export default function Home() {
                     fixedHeight={"h-auto"}
                   />
 
-                  {/* <Icon
+                  <Icon
                     IconType={NextJs}
                     title="Next"
                     columnSizing={"w-auto"}
@@ -957,7 +966,7 @@ export default function Home() {
                     marginRight={"mr-3"}
                     textTransform={"uppercase"}
                     fixedHeight={"h-auto"}
-                  /> */}
+                  />
                 </>
               }
             />

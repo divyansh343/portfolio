@@ -978,7 +978,7 @@ export default function Home() {
               imgWidth={"1366"}
               imgHeight={"666"}
               imgSrc={"/projects/glu.png"}
-              liveLink={"https://theglu.com"}
+              liveLink={"https://theglu.in"}
               repoLink={null}
               stack={
                 <>

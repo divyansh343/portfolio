@@ -294,7 +294,7 @@ export default function Home() {
               </li>
               <li className="z-50 block py-2 list-none lg:inline-block">
                 <a
-                  href="eresume.pdf"
+                  href="resume.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className={`header_link text-xl font-semibold transition-all duration-300 ease-in-out text-white ${visibleSection === "blog"
@@ -458,7 +458,7 @@ export default function Home() {
               </li>
               <li className="z-50 hidden mx-5 list-none lg:inline-block">
                 <a
-                  href="eresume.pdf"
+                  href="resume.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className={`header_link font-semibold transition-all duration-300 ease-in-out text-white ${visibleSection === "blog"

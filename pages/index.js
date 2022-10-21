@@ -27,17 +27,6 @@ import FeaturedProjectCard from "../components/FeaturedProjectCard";
 
 const projects = [
   {
-    title: "Mockyard",
-    overview:
-      `Mockayard exposes endpoint to test your application with the
-      realistic data. it helps you to kick out development with dummy
-      data.`,
-    stack: ["React", "Rest api", "tailwind"],
-    link: "https://www.mockyard.in/",
-    repo: false,
-    isSiteLive: true,
-  },
-  {
     title: "Outlivin",
     overview:
       `Outlivin lists Opportunities of the growing and developing
@@ -982,6 +971,165 @@ export default function Home() {
               repoLink={null}
               stack={
                 <>
+                 <Icon
+                    IconType={ReactJs}
+                    title="React"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={NextJs}
+                    title="Next"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+                  <Icon
+                    IconType={Html}
+                    title="HTML"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={Tailwind}
+                    title="Tailwind"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+                </>
+              }
+            />
+            <FeaturedProjectCard
+              title={"Rocktwrite"}
+              status={"Recent"}
+              description={`Rocktwrite is an AI writing tool. It is able to create stories and write letters. You can ask for anything to be written in writing. It is also capable of writing code. The Davinci Model and Codex feature of Open AI serve as its foundation.`}
+              float={`right-0`}
+              flexDirection={`flex-col lg:flex-row-reverse`}
+              imgWidth={"1200"}
+              imgHeight={"666"}
+              imgSrc={"/projects/rock.png"}
+              liveLink={"https://rocktwrite.theglu.in"}
+              repoLink={null}
+              stack={
+                <>
+                 <Icon
+                    IconType={ReactJs}
+                    title="React"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={Html}
+                    title="HTML"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={Tailwind}
+                    title="Tailwind"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+                </>
+              }
+            />
+            <FeaturedProjectCard
+              title={"Mockyard"}
+              status={"Recent"}
+              description={`Mockayard exposes endpoint to test your application with the
+              realistic data. it helps you to kick out development with dummy
+              data.`}
+              float={`right-0`}
+              flexDirection={`flex-col lg:flex-row-reverse`}
+              imgWidth={"1200"}
+              imgHeight={"666"}
+              imgSrc={"/projects/mock.png"}
+              liveLink={"https://mockyard.in"}
+              repoLink={null}
+              stack={
+                <>
+                 <Icon
+                    IconType={ReactJs}
+                    title="React"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
                   <Icon
                     IconType={Html}
                     title="HTML"

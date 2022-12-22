@@ -15,6 +15,7 @@ import Bootstrap from "../components/icons/Bootstrap";
 import ReactJs from "../components/icons/ReactJs";
 import NextJs from "../components/icons/NextJs";
 import NodeJs from "../components/icons/NodeJs";
+import Firebase from "../components/icons/Firebase";
 import Photoshop from "../components/icons/Photoshop";
 import AdobeXd from "../components/icons/AdobeXd";
 
@@ -528,7 +529,7 @@ export default function Home() {
                   eraseSpeed={30}
                   eraseDelay={1500}
                   text={[
-                    `Frontend developer`,
+                    `Full Stack developer`,
                     `Software engineer`,
                     `Mern stack`,
                   ]}
@@ -563,7 +564,7 @@ export default function Home() {
             <div className="flex flex-col-reverse items-start w-full md:flex-row">
               <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                 <p className="text-lg">
-                  Hello! I&apos;m Divyansh and I&apos;m a Frontend developer
+                  Hello! I&apos;m Divyansh and I&apos;m a Full stack developer
                   from India.
                 </p>
                 <p className="text-lg">
@@ -763,7 +764,6 @@ export default function Home() {
               fixedHeight={"h-28"}
             />
 
-            {/* Firebase
             <Icon
               IconType={Firebase}
               title="Firebase"
@@ -778,7 +778,7 @@ export default function Home() {
               marginRight={"mr-0"}
               textTransform={"normal-case"}
               fixedHeight={"h-28"}
-            /> */}
+            />
 
             {/* Photoshop */}
             <Icon
@@ -882,13 +882,92 @@ export default function Home() {
             <FeaturedProjectCard
               title={"theSocialCharts"}
               status={"Latest Project"}
-              description={`theSocialCharts is built in MERN stack with interactive admin dashboard`}
+              description={`theSocialCharts is bridging the gap between influencers and brands`}
               float={`right-0`}
               flexDirection={`flex-col lg:flex-row-reverse`}
               imgWidth={"1366"}
               imgHeight={"666"}
               imgSrc={"/projects/tsc.png"}
               liveLink={"https://theSocialCharts.com"}
+              repoLink={null}
+              stack={
+                <>
+                  <Icon
+                    IconType={Html}
+                    title="HTML"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={Tailwind}
+                    title="Tailwind"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={ReactJs}
+                    title="React"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+
+                  <Icon
+                    IconType={NextJs}
+                    title="Next"
+                    columnSizing={"w-auto"}
+                    width={"w-6"}
+                    height={"h-6"}
+                    flexDirection={"flex-row"}
+                    padding={"p-0"}
+                    titleMargins={"my-0 ml-1"}
+                    titleSize={"text-sm"}
+                    marginBottom={"mb-4"}
+                    marginRight={"mr-3"}
+                    textTransform={"uppercase"}
+                    fixedHeight={"h-auto"}
+                  />
+                </>
+              }
+            />
+            <FeaturedProjectCard
+              title={"v1 theSocialCharts"}
+              status={"Latest Project"}
+              description={`theSocialCharts is built in MERN stack with interactive admin dashboard`}
+              float={`right-0`}
+              flexDirection={`flex-col lg:flex-row-reverse`}
+              imgWidth={"1366"}
+              imgHeight={"666"}
+              imgSrc={"/projects/v1.png"}
+              liveLink={"https://v1.theSocialCharts.com"}
               repoLink={null}
               stack={
                 <>
@@ -1173,7 +1252,7 @@ export default function Home() {
               imgWidth={"1366"}
               imgHeight={"666"}
               imgSrc={"/projects/pahal.png"}
-              liveLink={"https://pahalindia.co.in"}
+              liveLink={"https://dalhousiepahalindia.netlify.app/"}
               repoLink={null}
               stack={
                 <>
@@ -1282,6 +1361,7 @@ export default function Home() {
                 <Link href="mailto:divyanshpal300@outlook.com">
                   <a className="underline-link">divyanshpal300@outlook.com</a>
                 </Link>{" "}
+                or Call at <span href="tel:6263965062" className="underline-link text-blue-500 cursor-pointer">+91 6263965062 </span> 
                 and let&apos;s talk about your project!
               </p>
             </div>

@@ -1,2 +1,2 @@
-# next-portfolio
- divyansh-portfolio
+# next-portfolio 
+ divyansh-portfolio readme file
